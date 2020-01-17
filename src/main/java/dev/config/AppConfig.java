@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan({"dev.ihm","dev.service","dev.dao"})
+@ComponentScan({"dev"})
 
 public class AppConfig {
 

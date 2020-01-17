@@ -14,6 +14,8 @@ public class App {
     public static void main(String[] args) {
     	
     	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    	
+    	
     			// récupération du bean Menu
     			Menu menu = context.getBean(Menu.class);
     			menu.afficher();
@@ -21,6 +23,10 @@ public class App {
     			context.getBean(Scanner.class).close();
     			// fermeture du contexte Spring
     			context.close();
+    			
+    			
 
     }
+    
+    
 }
