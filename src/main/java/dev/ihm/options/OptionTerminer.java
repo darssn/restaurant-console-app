@@ -1,7 +1,10 @@
 package dev.ihm.options;
 
+import org.springframework.stereotype.Component;
+
 import dev.exception.PlatException;
 
+@Component
 public class OptionTerminer implements IOptionMenu {
     @Override
     public String getTitre() {
@@ -12,4 +15,10 @@ public class OptionTerminer implements IOptionMenu {
     public void executer() {
         throw new PlatException("Aurevoir");
     }
+
+	@Override
+	public boolean isTerminate() {
+		
+		return true;
+	}
 }

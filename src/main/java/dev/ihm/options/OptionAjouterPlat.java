@@ -5,6 +5,10 @@ import dev.service.IPlatService;
 
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class OptionAjouterPlat implements IOptionMenu {
     private Scanner scanner;
 
@@ -43,4 +47,10 @@ public class OptionAjouterPlat implements IOptionMenu {
         }
 
     }
+
+	@Override
+	public boolean isTerminate() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

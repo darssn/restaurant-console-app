@@ -1,7 +1,11 @@
 package dev.ihm.options;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 import dev.service.IPlatService;
 
+@Component
 public class OptionListerPlats implements IOptionMenu {
 
     private IPlatService service;
@@ -23,4 +27,10 @@ public class OptionListerPlats implements IOptionMenu {
         });
 
     }
+
+	@Override
+	public boolean isTerminate() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
