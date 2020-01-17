@@ -5,7 +5,7 @@ import dev.service.IPlatService;
 
 import java.util.Scanner;
 
-import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Component;
 
 @Component

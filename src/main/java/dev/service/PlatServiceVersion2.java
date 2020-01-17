@@ -7,7 +7,7 @@ import dev.exception.PlatException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+
 
 
 public class PlatServiceVersion2 implements IPlatService {
