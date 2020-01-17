@@ -14,7 +14,7 @@ public class PlatServiceVersion1 implements IPlatService {
 
     private IPlatDao dao;
 
-    public PlatServiceVersion1(@Qualifier("platDaoJdbc") IPlatDao dao) {
+    public PlatServiceVersion1(@Qualifier("platDaoJpa") IPlatDao dao) {
         this.dao = dao;
     }
 

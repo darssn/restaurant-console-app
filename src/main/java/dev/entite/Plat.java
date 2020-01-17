@@ -5,17 +5,22 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
+
 
 @Entity
+@Table(name = "plat")
+
 public class Plat {
 
 	@Id
 	private int id;
 	
-	@Column
+	@Column(name="nom")
     private String nom;
 	
-	@Column
+	@Column(name="prix")
     private Integer prixEnCentimesEuros;
 
     public Plat() {
